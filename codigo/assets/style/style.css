@@ -1,0 +1,62 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    background-color: rgb(37, 46, 65);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.Rodape {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 12%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.Redes, .Ajuda {
+    align-items: center;
+    margin: 20px;
+}
+
+li, .li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.li{
+    line-height: 1.5;
+}
+
+.fa-brands {
+    display: flex;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.Sobre{
+    margin: 20px;
+    margin-right: 20px;
+}
+
+.Redes {
+    margin-left: 20px;
+}
+
+hr {
+    width: 2px;
+    height: 100px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
