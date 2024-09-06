@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="opaco"></div>
+    <div class="opaco hind"></div>
     <header><!--cabeçalho-->
         <div class="cabeçalho">
             <img src="assets/images/logo.png" alt="Logo" class="logo">
@@ -20,72 +20,32 @@
         <img src="assets/images/logo-completa.png" alt="logo-completa" class="logo-completa">
         <div class="cabeçalho">
             <input type="text" placeholder="Buscar">
-            <button class="Pesquisar">
+            <button onclick="pesquisar()" class="Pesquisar">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
         </div>
     </header>
 
     <main><!--codico principal-->
-        <div class="destaques">
+        <div>
             <div class="margem20px"></div>
-            <h2 class="secoes-content" id="primeiro-da-lista">Destaques</h2>
-            <div class="content">
-                <div class="banner"></div>
-                <div class="banner"></div>
-                <div class="banner"></div>
-                <div class="banner"></div>
-                <div class="banner"></div>
-                <div class="banner"></div>
-                
-            </div>
+            <h2 class="secoes-content" id="primeiro-da-lista">Mais Recentes</h2>
+            <div class="content" id="content"></div>
         </div>
         <hr class="horizontal">
-        <div class="recomendacoes">
-            <h2 class="secoes-content">Recomendações</h2>
-            <div class="content">
-                <div class="banner"></div>
-                <div class="banner"></div>
-                <div class="banner"></div>
-                <div class="banner"></div>
-                <div class="banner"></div>
-                <div class="banner"></div>
-                
-            </div>
-        </div>
-        <hr class="horizontal">
-        <div class="melhores">
-            <h2 class="secoes-content">Mais Bem Avaliados</h2>
-            <div class="content">
-                <div class="banner"></div>
-                <div class="banner"></div>
-                <div class="banner"></div>
-                <div class="banner"></div>
-                <div class="banner"></div>
-                <div class="banner"></div>
-                
-            </div>
-        </div>
-
-
-        <div class="painel">
+        <h2 class="secoes-content">Todos</h2>
+        <div id="todos"></div>
+        <div class="painel hind">
             <div class="painel-detalhes">
                 <div class="imagem"></div>
-                <div class="detalhes">
-                    <h1>Titulo</h1>
-                    <p>Descriçaõ: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, assumenda itaque
-                        harum dolorem iure optio!<br> Nihil rerum quibusdam repellendus consectetur sit, omnis sequi
-                        mollitia voluptatem! Delectus, tenetur. Similique, doloremque amet!</p>
-                    <p>Lançamento 00/00/0000</p>
+
+                <div class="detalhes"><!--Informações do filme selecionado-->
+                    <h1><!--Título--></h1>
+                    <p><!--Descrição--></p>
+                    <p>Lançamento: <!--Data--></p>
                     <p>Plataformas disponíveis:</p>
                     <div class="plataformas">
-                        <li>Netflix</li>
-                        <li>Disney+</li>
-                        <li>Prime Video</li>
-                        <li>Max</li>
-                        <li>HBO</li>
-                        <li>Aple TV+</li>
-                        <li>Cinemas</li>
+                        <li><!--Plataforma--></li>
                     </div>
                 </div>
                 <div class="x1">
@@ -128,8 +88,8 @@
     </footer>
 
     <!--Local de licagem de assets-->
-    <script src="assets/JS/assets.js"></script>
     <script src="assets/db/db.js"></script>
+    <script src="assets/JS/assets.js"></script>
     <!--fonte para utilizar logos e símbolos sem a necessidade de adicionar imagens ao código-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
