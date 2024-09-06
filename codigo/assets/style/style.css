@@ -1,9 +1,59 @@
-html {
+html { /*aplicado em toda a página*/
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*
+-------------------Código da Barra de Navegação-------------------
+*/
+h1 {
+    color: #ffffff;
+    margin: 0%;
+}
+.Pesquisar {
+    height: 35px;
+    width: 35px;
+    background-color:#001924;
+    border-radius: 50%;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    margin-left: 5px;
+}
+
+.logo {
+    height: 70px;
+    margin-right: 20px;
+}
+.logo-completa {
+    height: 90px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #001924;
+}
+
+.cabeçalho {
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 300px;
+    height: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+/*
+-------------------Código do Rodapé-------------------
+*/
+
 footer {
-    background-color: rgb(37, 46, 65);
+    background-color: #001924;
     color: #ffffff;
     display: flex;
     align-items: center;
