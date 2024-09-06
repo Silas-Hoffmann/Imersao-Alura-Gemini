@@ -14,49 +14,56 @@
     <div class="opaco hind"></div>
     <header><!--cabeçalho-->
         <div class="cabeçalho">
-            <img src="assets/images/logo.png" alt="Logo" class="logo">
+            <img src="assets/images/logo.png" alt="Logo" class="logo". id="minhaLogo">
             <h1>Cinetrack</h1>
         </div>
         <img src="assets/images/logo-completa.png" alt="logo-completa" class="logo-completa">
+
+
+
         <div class="cabeçalho">
-            <input type="text" placeholder="Buscar">
+            <input type="text" placeholder="Buscar" id="campo-pesquisa">
             <button onclick="pesquisar()" class="Pesquisar">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
         </div>
+
+
+
     </header>
 
     <main><!--codico principal-->
-        <div>
-            <div class="margem20px"></div>
-            <h2 class="secoes-content" id="primeiro-da-lista">Mais Recentes</h2>
-            <div class="content" id="content"></div>
-        </div>
-        <hr class="horizontal">
-        <h2 class="secoes-content">Todos</h2>
-        <div id="todos"></div>
-        <div class="painel hind">
-            <div class="painel-detalhes">
-                <div class="imagem"></div>
-
-                <div class="detalhes"><!--Informações do filme selecionado-->
-                    <h1><!--Título--></h1>
-                    <p><!--Descrição--></p>
-                    <p>Lançamento: <!--Data--></p>
-                    <p>Plataformas disponíveis:</p>
-                    <div class="plataformas">
-                        <li><!--Plataforma--></li>
+        <div id="esconder"> <!--class="hind"-->
+            <div>
+                <div class="margem20px"></div>
+                <h2 class="secoes-content" id="primeiro-da-lista">Mais Recentes</h2>
+                <div class="content" id="content"></div>
+            </div>
+            <hr class="horizontal">
+            <h2 class="secoes-content">Todos</h2>
+            <div id="todos"></div>
+            <div class="painel hind">
+                <div class="painel-detalhes">
+                    <div class="imagem"></div>
+    
+                    <div class="detalhes"><!--Informações do filme selecionado-->
+                        <h1><!--Título--></h1>
+                        <p><!--Descrição--></p>
+                        <p>Lançamento: <!--Data--></p>
+                        <p>Plataformas disponíveis:</p>
+                        <div class="plataformas">
+                            <li><!--Plataforma--></li>
+                        </div>
                     </div>
-                </div>
-                <div class="x1">
-                    <button class="x">
-                        <i class="fa-solid fa-x"></i>
-                    </button>
+                    <div class="x1">
+                        <button class="x">
+                            <i class="fa-solid fa-x"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-
-
+        <div id="resultados" class="hind"></div>
     </main>
 
     <footer><!--rodapé-->

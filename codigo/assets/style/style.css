@@ -26,6 +26,7 @@ h1 {
 .logo {
     height: 70px;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .logo-completa {
@@ -53,7 +54,7 @@ input[type="text"] {
     height: 15px;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 50px;
 }
 
 
@@ -62,8 +63,6 @@ input[type="text"] {
 */
 main {
     background-color: #00344A;
-    margin: 0%;
-    border-style: none;
 }
 
 .content {
@@ -164,6 +163,12 @@ main {
     background-color: #000000;
     opacity: 50%;
     top: 0%;
+}
+
+#resultados {
+    height: 400px;
+    width: 100%;
+    background-color: #00344A;
 }
 
 

@@ -1,3 +1,9 @@
+const logo = document.getElementById('minhaLogo');
+
+logo.addEventListener('click', () => {
+  location.reload();
+});
+
 let data1 = "00/00/00", data2 = "00/00/00", data3 = "00/00/00", data4 = "00/00/00", data5 = "00/00/00", cont = [5];
 
 //calcular data atual
@@ -68,8 +74,31 @@ function criarContainer(inicio, fim) {
     section2.appendChild(container);
 }
 
-// Criando os 20 containers
+// Cria os 20 containers
 for (let i = 0; i < dados.length; i += 5) {
     criarContainer(i, i + 5);
 }
 
+
+
+
+function pesquisar() {
+
+    let campoPesquisa = document.getElementById("campo-pesquisa").value
+    console.log (campoPesquisa)
+
+    document.getElementById("esconder").classList.add("hind");
+    document.getElementById("resultados").classList.remove("hind");
+
+    let section3 = document.getElementById("resultados");
+    for (let dado of dados) {
+        if (dados.titulo.includes(campoPesquisa)){
+            section3.innerHTML += `
+        <button class="banner">${dados[0].titulo}</button>
+    `
+        }
+    }
+    
+
+    
+}
