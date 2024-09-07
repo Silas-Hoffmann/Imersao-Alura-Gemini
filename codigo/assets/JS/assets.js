@@ -116,7 +116,7 @@ function abrirpainel(botao) {
     let detalhefilme = document.getElementById("detalhes");
     let dataapresentada = [10];
     for (let dado of dados) {
-        if (dado.titulo.includes(nomeDoBotao)) {
+        if (dado.titulo==nomeDoBotao) {
 
             let dataOriginal = dado.data_de_lancamento;
             let dataFormatada = new Date(dataOriginal).toLocaleDateString('pt-BR', {
@@ -128,8 +128,8 @@ function abrirpainel(botao) {
             detalhefilme.innerHTML = `
             <h1 style="margin-bottom: 70px">${dado.titulo}</h1>
             <p style="margin: 10px; font-size: 20px;" >${dado.descricao}</p>
-            <p style="margin: 10px; font-size: 20px;" >Lançamento: ${dataFormatada}</p>
-            <p style="margin: 10px; font-size: 20px;" >Plataformas disponíveis:</p>
+            <p style="margin: 10px; font-size: 20px;" >Disponível no Streaming: ${dataFormatada}</p>
+            <p style="margin: 10px; font-size: 20px;" >Plataforma disponível:</p>
             <div class="plataformas">
                 <li style="font-size: 20px;" >${dado.plataformas_disponiveis}</li>
             </div>`

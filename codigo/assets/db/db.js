@@ -2,7 +2,7 @@ let dados = [
     {
       "titulo": "The Killer",
       "descricao": "Filme de ação dirigido por John Woo com uma assassina que falha em uma missão e enfrenta as consequências.",
-      "data_de_lancamento": "2024/08/23",
+      "data_de_lancamento": "2024/09/23",
       "plataformas_disponiveis": ["Netflix"]
     },
     {
@@ -86,13 +86,13 @@ let dados = [
     {
       "titulo": "Edge of Tomorrow",
       "descricao": "Filme de ação e ficção científica com Tom Cruise e Emily Blunt, onde um soldado revive repetidamente a batalha contra alienígenas e busca mudar o curso da guerra.",
-      "data_de_lancamento": "2014/09/07",
+      "data_de_lancamento": "2014/06/06",
       "plataformas_disponiveis": ["Netflix"]
     },
     {
       "titulo": "Grave of the Fireflies",
       "descricao": "Filme animado do Studio Ghibli ambientado no Japão da Segunda Guerra Mundial, que conta a história de dois irmãos órfãos lutando para sobreviver.",
-      "data_de_lancamento": "1989/09/16",
+      "data_de_lancamento": "1988/04/16",
       "plataformas_disponiveis": ["Netflix"]
     },
     {
@@ -122,7 +122,7 @@ let dados = [
       {
         "titulo": "Tell Me Lies",
         "descricao": "Drama sobre o relacionamento turbulento entre Lucy e Stephen, que se desenrola ao longo de oito anos, abordando os altos e baixos de suas vidas.",
-        "data_de_lancamento": "2024/09/06",
+        "data_de_lancamento": "2024/09/05",
         "plataformas_disponiveis": ["Disney+"]
       },
       {
@@ -140,7 +140,7 @@ let dados = [
       {
         "titulo": "Ready Player One",
         "descricao": "Em um futuro distópico, um jovem participa de uma caça ao tesouro dentro de um jogo de realidade virtual, onde a recompensa é imensa.",
-        "data_de_lancamento": "2024/09/01",
+        "data_de_lancamento": "2018/03/29",
         "plataformas_disponiveis": ["Max"]
       },
       {
@@ -186,15 +186,9 @@ let dados = [
         "plataformas_disponiveis": ["Max"]
       },
       {
-        "titulo": "How to Die Alone",
-        "descricao": "Comédia sobre uma mulher que, após uma experiência de quase morte, decide transformar sua vida e enfrentar seus medos.",
-        "data_de_lancamento": "2024/09/13",
-        "plataformas_disponiveis": ["Max"]
-      },
-      {
         "titulo": "Handling the Undead",
         "descricao": "Série sueca que explora o renascimento misterioso de pessoas falecidas e as consequências sociais e familiares desse fenômeno.",
-        "data_de_lancamento": "2024/09/17",
+        "data_de_lancamento": "Sem data",
         "plataformas_disponiveis": ["Max"]
       },
       {
@@ -206,19 +200,13 @@ let dados = [
       {
         "titulo": "Boy Kills World",
         "descricao": "Filme de ação e fantasia em que um jovem surdo mudo se torna um assassino implacável em um mundo distópico.",
-        "data_de_lancamento": "2024/09/13",
-        "plataformas_disponiveis": ["Max"]
-      },
-      {
-        "titulo": "FLY",
-        "descricao": "Filme emocionante sobre uma jovem bailarina que busca alcançar a grandeza enquanto lida com desafios pessoais e familiares.",
-        "data_de_lancamento": "2024/09/25",
+        "data_de_lancamento": "2024/04/26",
         "plataformas_disponiveis": ["Max"]
       },
       {
         "titulo": "Come Out Fighting",
         "descricao": "Drama de guerra baseado em eventos reais onde soldados enfrentam desafios inesperados em batalhas decisivas da Segunda Guerra Mundial.",
-        "data_de_lancamento": "2024/09/21",
+        "data_de_lancamento": "procurar fontes",
         "plataformas_disponiveis": ["Max"]
       },
       {
@@ -230,181 +218,139 @@ let dados = [
       {
         "titulo": "Super 8",
         "descricao": "Filme de ficção científica e mistério sobre um grupo de crianças que testemunha um acidente de trem e descobre algo extraordinário.",
-        "data_de_lancamento": "2024/09/01",
-        "plataformas_disponiveis": ["Netflix"]
-      },
-      {
-        "titulo": "Straw Dogs",
-        "descricao": "Thriller psicológico sobre um roteirista que se muda para uma cidade rural e enfrenta a hostilidade dos moradores locais.",
-        "data_de_lancamento": "2024/09/01",
-        "plataformas_disponiveis": ["Max"]
+        "data_de_lancamento": "2011/06/10",
+        "plataformas_disponiveis": ["Prime Video"]
       },
       {
         "titulo": "Us",
         "descricao": "Terror psicológico onde uma família é aterrorizada por seus doppelgängers durante uma misteriosa noite de férias.",
-        "data_de_lancamento": "2024/09/01",
-        "plataformas_disponiveis": ["Max"]
-      },
-      {
-        "titulo": "Forged in Fire",
-        "descricao": "Série de competição onde ferreiros testam suas habilidades recriando armas lendárias.",
-        "data_de_lancamento": "2024/09/05",
-        "plataformas_disponiveis": ["Max"]
-      },
-      {
-        "titulo": "The Golden Bachelorette",
-        "descricao": "Reality show que acompanha uma mulher de idade avançada na busca por amor entre vários pretendentes.",
-        "data_de_lancamento": "2024/09/19",
+        "data_de_lancamento": "2019/03/22",
         "plataformas_disponiveis": ["Max"]
       },
       {
         "titulo": "The Unbearable Weight of Massive Talent",
         "descricao": "Comédia em que Nicolas Cage interpreta uma versão fictícia de si mesmo recrutado por um fã para uma missão bizarra.",
-        "data_de_lancamento": "2024/09/19",
+        "data_de_lancamento": "2022/04/22",
         "plataformas_disponiveis": ["Max"]
       },
       {
         "titulo": "The Old Man",
         "descricao": "Ex-agente da CIA é perseguido por antigos aliados após se envolver em um incidente misterioso.",
-        "data_de_lancamento": "2024/09/13",
+        "data_de_lancamento": "2022/06/16",
         "plataformas_disponiveis": ["Max"]
       },
       {
         "titulo": "Agatha All Along",
         "descricao": "Série derivada de WandaVision centrada em Agatha Harkness explorando seus poderes e segredos.",
-        "data_de_lancamento": "2024/09/01",
+        "data_de_lancamento": "2024/09/18",
         "plataformas_disponiveis": ["Disney+"]
       },
       {
         "titulo": "The Favourite",
         "descricao": "Drama histórico centrado em uma intensa rivalidade na corte real da Inglaterra durante o reinado da Rainha Ana.",
-        "data_de_lancamento": "2024/09/15",
-        "plataformas_disponiveis": ["Max"]
-      },
-      {
-        "titulo": "Universal Basic Guys",
-        "descricao": "Comédia sobre três amigos que precisam se reinventar em um mundo onde o trabalho está em declínio.",
-        "data_de_lancamento": "2024/09/09",
-        "plataformas_disponiveis": ["Max"]
-      },
-      {
-        "titulo": "UFO Hunters",
-        "descricao": "Série documental explorando investigações sobre OVNIs e os mistérios que cercam os avistamentos.",
-        "data_de_lancamento": "2024/09/19",
+        "data_de_lancamento": "2018/11/23",
         "plataformas_disponiveis": ["Max"]
       },
       {
         "titulo": "The Boy and the Heron",
         "descricao": "Um jovem garoto é guiado por uma garça através de um mundo compartilhado pelos vivos e mortos.",
-        "data_de_lancamento": "2024/09/06",
+        "data_de_lancamento": "2023/07/14",
         "plataformas_disponiveis": ["Max"]
       },
       {
         "titulo": "Civil War",
         "descricao": "Um drama intenso da A24 que explora as complexidades da sociedade americana moderna.",
-        "data_de_lancamento": "2024/09/13",
+        "data_de_lancamento": "2024",
         "plataformas_disponiveis": ["Max"]
       },
       {
         "titulo": "Everything Everywhere All at Once",
         "descricao": "Uma mulher comum descobre que precisa acessar versões alternativas de si mesma para salvar o multiverso.",
-        "data_de_lancamento": "2024/09/01",
+        "data_de_lancamento": "2022/03/25",
         "plataformas_disponiveis": ["Max"]
       },
       {
         "titulo": "The Martian",
         "descricao": "Um astronauta é deixado para trás em Marte e precisa usar sua engenhosidade para sobreviver enquanto aguarda resgate.",
-        "data_de_lancamento": "2024/09/01",
+        "data_de_lancamento": "2015/10/02",
         "plataformas_disponiveis": ["Max"]
       },
       {
         "titulo": "The Shining",
         "descricao": "Um escritor e sua família enfrentam forças sobrenaturais enquanto cuidam de um hotel isolado durante o inverno.",
-        "data_de_lancamento": "2024/09/01",
+        "data_de_lancamento": "1980/05/23",
         "plataformas_disponiveis": ["Max"]
       },
       {
         "titulo": "X-Men: Apocalypse",
         "descricao": "Os X-Men enfrentam o mutante mais poderoso de todos os tempos, Apocalipse, em uma batalha épica.",
-        "data_de_lancamento": "2024/09/01",
+        "data_de_lancamento": "2016/05/27",
         "plataformas_disponiveis": ["Max"]
       },
       {
         "titulo": "Prisoners",
         "descricao": "Um pai desesperado toma medidas extremas quando sua filha desaparece, confrontando os limites de sua moralidade.",
-        "data_de_lancamento": "2024/09/20",
+        "data_de_lancamento": "2013/09/20",
         "plataformas_disponiveis": ["Max"]
       },
       {
         "titulo": "Bodies Bodies Bodies",
         "descricao": "Um grupo de amigos tenta sobreviver a uma noite de assassinato e traição em uma mansão isolada.",
-        "data_de_lancamento": "2024/09/20",
-        "plataformas_disponiveis": ["Max"]
-      },
-      {
-        "titulo": "Halloween Wars",
-        "descricao": "Artistas competem para criar as mais assustadoras e elaboradas exibições temáticas de Halloween.",
-        "data_de_lancamento": "2024/09/22",
+        "data_de_lancamento": "2022/08/05",
         "plataformas_disponiveis": ["Max"]
       },
       {
         "titulo": "Triple 9",
         "descricao": "Um grupo de criminosos e policiais corruptos planeja o roubo do século.",
-        "data_de_lancamento": "2024/09/08",
+        "data_de_lancamento": "2016/02/26",
         "plataformas_disponiveis": ["Max"]
       },
       {
         "titulo": "Drive My Car",
         "descricao": "Um ator e diretor enfrenta suas emoções reprimidas enquanto dirige uma produção teatral em Hiroshima.",
-        "data_de_lancamento": "2024/09/02",
+        "data_de_lancamento": "2021/07/11",
         "plataformas_disponiveis": ["Max"]
       },
       {
         "titulo": "Troll Hunter",
         "descricao": "Estudantes de cinema noruegueses descobrem um caçador de trolls em uma jornada perigosa para documentar criaturas míticas.",
-        "data_de_lancamento": "2024/09/01",
+        "data_de_lancamento": "2010/10/29",
         "plataformas_disponiveis": ["Max"]
       },
       {
         "titulo": "The Exorcist",
         "descricao": "Uma jovem é possuída por um espírito demoníaco e um padre tenta salvá-la com um exorcismo.",
-        "data_de_lancamento": "2024/09/01",
+        "data_de_lancamento": "1973/12/26",
         "plataformas_disponiveis": ["Max"]
       },
       {
         "titulo": "The Big Chill",
         "descricao": "Um grupo de amigos da faculdade se reúne após a morte de um deles e reflete sobre a vida e suas escolhas.",
-        "data_de_lancamento": "2024/09/01",
+        "data_de_lancamento": "1983/09/28",
         "plataformas_disponiveis": ["Max"]
       },
       {
         "titulo": "Scooby-Doo on Zombie Island",
         "descricao": "Scooby e sua turma investigam uma ilha misteriosa habitada por zumbis.",
-        "data_de_lancamento": "2024/09/14",
-        "plataformas_disponiveis": ["Max"]
-      },
-      {
-        "titulo": "Independence Day",
-        "descricao": "A humanidade se une para combater uma invasão alienígena maciça no Dia da Independência dos Estados Unidos.",
-        "data_de_lancamento": "2024/09/01",
+        "data_de_lancamento": "1998/09/22",
         "plataformas_disponiveis": ["Max"]
       },
       {
         "titulo": "Knight and Day",
         "descricao": "Um agente secreto inesperadamente leva uma mulher comum em uma aventura cheia de ação ao redor do mundo.",
-        "data_de_lancamento": "2024/09/01",
+        "data_de_lancamento": "2010/06/23",
         "plataformas_disponiveis": ["Max"]
       },
       {
         "titulo": "Shrek Forever After",
         "descricao": "Shrek tenta recuperar sua vida tranquila após assinar um pacto com o trapaceiro Rumpelstiltskin.",
-        "data_de_lancamento": "2024/09/01",
+        "data_de_lancamento": "2010/05/21",
         "plataformas_disponiveis": ["Max"]
       },
       {
         "titulo": "Viva",
         "descricao": "Um jovem aspirante a drag queen enfrenta as complicações de sua vida familiar em Havana.",
-        "data_de_lancamento": "2024/09/01",
+        "data_de_lancamento": "2015/09/02",
         "plataformas_disponiveis": ["Max"]
       },
       {
@@ -422,31 +368,31 @@ let dados = [
       {
         "titulo": "i Used to Be Funny",
         "descricao": "Comédia dramática sobre uma jovem que enfrenta dilemas enquanto tenta ser comediante e lidar com PTSD.",
-        "data_de_lancamento": "2024/09/05",
+        "data_de_lancamento": "2024/06/18",
         "plataformas_disponiveis": ["Netflix"]
       },
       {
         "titulo": "3:10 to Yuma",
         "descricao": "Faroeste em que um fazendeiro precisa escoltar um famoso fora-da-lei até o trem enfrentando muitos perigos.",
-        "data_de_lancamento": "2024/09/01",
+        "data_de_lancamento": "2007/09/07",
         "plataformas_disponiveis": ["Netflix"]
       },
       {
         "titulo": "Megalópolis",
         "descricao": "Drama de ficção científica sobre um arquiteto visionário que tenta reconstruir uma Nova York utópica após uma catástrofe.",
-        "data_de_lancamento": "2024/09/01",
+        "data_de_lancamento": "sem data",
         "plataformas_disponiveis": ["Prime Video"]
       },
       {
         "titulo": "Transformers One",
         "descricao": "Prelúdio animado que explora a juventude de Optimus Prime e Megatron antes de se tornarem inimigos.",
-        "data_de_lancamento": "2024/09/01",
+        "data_de_lancamento": "2024/09/13",
         "plataformas_disponiveis": ["Prime Video"]
       },
       {
         "titulo": "Speak No Evil",
         "descricao": "Thriller psicológico sobre uma família americana que se vê presa em uma situação assustadora ao visitar amigos britânicos.",
-        "data_de_lancamento": "2024/09/02",
+        "data_de_lancamento": "2022/09/09",
         "plataformas_disponiveis": ["Prime Video"]
       },
       {
@@ -454,12 +400,6 @@ let dados = [
         "descricao": "Daryl e Carol se reencontram na França enquanto buscam por um amigo desaparecido.",
         "data_de_lancamento": "2024/09/29",
         "plataformas_disponiveis": ["Max"]
-      },
-      {
-        "titulo": "La Maison",
-        "descricao": "Drama francês que explora as complexidades de uma herança familiar em uma grande propriedade.",
-        "data_de_lancamento": "2024/09/20",
-        "plataformas_disponiveis": ["Apple TV+"]
       },
       {
         "titulo": "Midnight Family",
@@ -482,7 +422,7 @@ let dados = [
       {
         "titulo": "Fool Me Once",
         "descricao": "Thriller psicológico onde uma mulher descobre segredos inquietantes sobre o assassinato de seu marido.",
-        "data_de_lancamento": "2024/09/12",
+        "data_de_lancamento": "2024/01/01",
         "plataformas_disponiveis": ["Netflix"]
       },
       {
@@ -494,7 +434,7 @@ let dados = [
       {
         "titulo": "Griselda",
         "descricao": "Série que conta a história de Griselda Blanco, uma das maiores traficantes de drogas da história.",
-        "data_de_lancamento": "2024/09/01",
+        "data_de_lancamento": "2024/01/01",
         "plataformas_disponiveis": ["Netflix"]
       },
       {
@@ -540,12 +480,6 @@ let dados = [
         "plataformas_disponiveis": ["HBO Max"]
       },
       {
-        "titulo": "Rua Augusta",
-        "descricao": "Série que mergulha no mundo noturno da Rua Augusta, em São Paulo, centrada na vida de Mika, uma stripper que busca sua identidade em meio ao caos da noite paulistana.",
-        "data_de_lancamento": "2018/03/15",
-        "plataformas_disponiveis": ["HBO Max"]
-      },
-      {
         "titulo": "Psi",
         "descricao": "Série sobre o psicanalista Carlo Antonini, que lida com seus pacientes em São Paulo enquanto enfrenta seus próprios desafios pessoais.",
         "data_de_lancamento": "2014/03/23",
@@ -576,27 +510,93 @@ let dados = [
         "plataformas_disponiveis": ["HBO Max"]
       },
       {
-        "titulo": "Guerras do Brasil.doc",
-        "descricao": "Documentário que explora diversos conflitos que moldaram a história do Brasil, como a Guerra do Paraguai e a Revolução de 1930.",
-        "data_de_lancamento": "2019/04/25",
-        "plataformas_disponiveis": ["Netflix"]
-      },
-      {
-        "titulo": "Pico da Neblina",
-        "descricao": "Série que imagina um Brasil onde a maconha foi legalizada, acompanhando a trajetória de Biriba, um ex-traficante que tenta se adaptar ao novo mercado legal.",
-        "data_de_lancamento": "2019/08/04",
-        "plataformas_disponiveis": ["HBO Max"]
-      },
-      {
         "titulo": "Nise: O Coração da Loucura",
         "descricao": "Filme biográfico sobre Nise da Silveira, uma psiquiatra que revolucionou o tratamento de pacientes psiquiátricos no Brasil com métodos humanizados.",
         "data_de_lancamento": "2016/04/21",
         "plataformas_disponiveis": ["Prime Video"]
       },
       {
-        "titulo": "Bingo: O Rei das Manhãs",
-        "descricao": "Filme inspirado na vida de Arlindo Barreto, que interpretou o palhaço Bozo no Brasil, retratando os altos e baixos de sua carreira e a luta contra o vício.",
-        "data_de_lancamento": "2017/08/24",
+        "titulo": "Cidade de Deus",
+        "descricao": "Filme brasileiro que acompanha a ascensão do crime organizado no subúrbio Cidade de Deus no Rio de Janeiro entre os anos 60 e 80. Segue a vida de dois jovens cujos caminhos divergem: um se torna fotógrafo, o outro um poderoso traficante.",
+        "data_de_lancamento": "2002/08/30",
+        "plataformas_disponiveis": ["HBO Max", " Prime Video", " Apple TV"]
+      },
+      {
+        "titulo": "Breaking Bad",
+        "descricao": "Série americana que conta a história de Walter White, um professor de química diagnosticado com câncer terminal que decide fabricar metanfetamina para garantir o futuro financeiro de sua família.",
+        "data_de_lancamento": "2008/01/20",
+        "plataformas_disponiveis": ["Netflix"]
+      },
+      {
+        "titulo": "Better Call Saul",
+        "descricao": "Prequel de Breaking Bad, segue a transformação do advogado Jimmy McGill no corrupto advogado Saul Goodman, explorando seu passado e as razões para sua queda moral.",
+        "data_de_lancamento": "2015/02/08",
+        "plataformas_disponiveis": ["Netflix"]
+      },
+      {
+        "titulo": "The Office",
+        "descricao": "Série de comédia em formato de documentário fictício que acompanha o cotidiano dos funcionários de um escritório de vendas de papel na cidade de Scranton, Pensilvânia.",
+        "data_de_lancamento": "2005/03/24",
+        "plataformas_disponiveis": ["Prime Video"]
+      },
+      {
+        "titulo": "American Psycho",
+        "descricao": "Filme baseado no romance de Bret Easton Ellis que segue Patrick Bateman, um banqueiro de investimentos de Nova York que vive uma vida dupla como serial killer.",
+        "data_de_lancamento": "2000/04/14",
+        "plataformas_disponiveis": ["Prime Video", " HBO Max"]
+      },
+      {
+        "titulo": "Spirited Away",
+        "descricao": "Filme de animação japonês dirigido por Hayao Miyazaki, sobre uma garota que, ao se mudar para uma nova casa, acaba em um mundo espiritual cheio de criaturas mágicas e desafios.",
+        "data_de_lancamento": "2001/07/20",
+        "plataformas_disponiveis": ["Netflix", " HBO Max"]
+      },
+      {
+        "titulo": "Arcane",
+        "descricao": "Série animada baseada no universo do jogo League of Legends, que explora as origens de alguns dos personagens mais icônicos do jogo e as tensões entre cidades futuristas.",
+        "data_de_lancamento": "2021/11/06",
+        "plataformas_disponiveis": ["Netflix"]
+      },
+      {
+        "titulo": "El Camino: A Breaking Bad Movie",
+        "descricao": "Um filme que serve como epílogo para a série Breaking Bad, focado na fuga de Jesse Pinkman e suas tentativas de deixar seu passado para trás enquanto lida com as consequências de seus crimes.",
+        "data_de_lancamento": "2019/10/11",
+        "plataformas_disponiveis": ["Netflix"]
+      },
+      {
+        "titulo": "Invincible",
+        "descricao": "Série animada de super-heróis que segue Mark Grayson, um adolescente cujo pai é o super-herói mais poderoso da Terra. A série explora seu caminho para se tornar um herói enquanto descobre verdades sombrias sobre sua família.",
+        "data_de_lancamento": "2021/03/25",
+        "plataformas_disponiveis": ["Prime Video"]
+      },
+      {
+        "titulo": "Friends",
+        "descricao": "Uma das comédias mais icônicas da TV, Friends acompanha as vidas de seis amigos que vivem em Nova York enquanto enfrentam desafios pessoais e profissionais com muito humor.",
+        "data_de_lancamento": "1994/09/22",
         "plataformas_disponiveis": ["HBO Max"]
+      },
+      {
+        "titulo": "Avengers: Endgame",
+        "descricao": "O último filme da saga Vingadores reúne os heróis sobreviventes na tentativa final de derrotar Thanos e reverter as consequências catastróficas de seus atos.",
+        "data_de_lancamento": "2019/04/26",
+        "plataformas_disponiveis": ["Disney+"]
+      },
+      {
+        "titulo": "Get Out",
+        "descricao": "Thriller psicológico de terror sobre um jovem negro que visita a família branca de sua namorada e descobre segredos perturbadores. O filme mistura crítica social com horror.",
+        "data_de_lancamento": "2017/02/24",
+        "plataformas_disponiveis": ["Prime Video"]
+      },
+      {
+        "titulo": "Nope",
+        "descricao": "Filme de terror e ficção científica dirigido por Jordan Peele, que acompanha uma série de eventos bizarros em uma área rural da Califórnia envolvendo fenômenos extraterrestres.",
+        "data_de_lancamento": "2022/07/22",
+        "plataformas_disponiveis": ["Prime Video"]
+      },
+      {
+        "titulo": "Pulp Fiction",
+        "descricao": "Dirigido por Quentin Tarantino, este filme cult mistura histórias interconectadas de violência e redenção com diálogos memoráveis e uma narrativa não linear.",
+        "data_de_lancamento": "1994/10/14",
+        "plataformas_disponiveis": ["Prime Video", " HBO Max"]
       }
     ]
