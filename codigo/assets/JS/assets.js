@@ -70,7 +70,7 @@ function criarContainer(inicio, fim) {
         banner.textContent = dados[i].titulo;
 
         // Adiciona o evento de clique
-        banner.addEventListener("click", function() {
+        banner.addEventListener("click", function () {
             abrirpainel(this);
         });
 
@@ -80,12 +80,10 @@ function criarContainer(inicio, fim) {
     section2.appendChild(container);
 }
 
-
 // Cria os 20 containers
 for (let i = 0; i < dados.length; i += 5) {
     criarContainer(i, i + 5);
 }
-
 
 function pesquisar() {
     let campoPesquisa = document.getElementById("campo-pesquisa").value;
@@ -103,10 +101,11 @@ function pesquisar() {
           <button onclick="abrirpainel(this)" class="banner">${dado.titulo}</button>
         `;
         }
+        if (campoPesquisa == "") {
+            return;
+        }
     }
 }
-
-
 
 function abrirpainel(botao) {
     document.getElementById("painel").classList.remove("hind");
@@ -115,28 +114,29 @@ function abrirpainel(botao) {
     const nomeDoBotao = botao.textContent;
 
     let detalhefilme = document.getElementById("detalhes");
-
+    let dataapresentada = [10];
     for (let dado of dados) {
         if (dado.titulo.includes(nomeDoBotao)) {
 
+            let dataOriginal = dado.data_de_lancamento;
+            let dataFormatada = new Date(dataOriginal).toLocaleDateString('pt-BR', {
+                day: '2-digit',
+                month: '2-digit',
+                year: 'numeric'
+            });
+
             detalhefilme.innerHTML = `
-            <h1>${dado.titulo}</h1>
-                <p>${dado.descricao}</p>
-                <p>Lançamento: ${dado.data_de_lancamento}</p>
-                <p>Plataformas disponíveis:</p>
-                <div class="plataformas">
-                    <li>${dado.plataformas_disponiveis}</li>
-                </div>
-            `
+            <h1 style="margin-bottom: 70px">${dado.titulo}</h1>
+            <p style="margin: 10px; font-size: 20px;" >${dado.descricao}</p>
+            <p style="margin: 10px; font-size: 20px;" >Lançamento: ${dataFormatada}</p>
+            <p style="margin: 10px; font-size: 20px;" >Plataformas disponíveis:</p>
+            <div class="plataformas">
+                <li style="font-size: 20px;" >${dado.plataformas_disponiveis}</li>
+            </div>`
         }
     }
-
-
-
-
-
-
 }
+
 function fecharpainel() {
     document.getElementById("painel").classList.add("hind");
     document.getElementById("opaco").classList.add("hind");
