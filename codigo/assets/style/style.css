@@ -3,6 +3,7 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     border: none;
 }
+
 /*Retira as bordas do navegador*/
 * {
     margin: 0;
@@ -22,7 +23,7 @@ h1 {
 .Pesquisar {
     height: 35px;
     width: 35px;
-    background-color: #001924;
+    background-color: #00344A;
     border-radius: 50%;
     color: #ffffff;
     border: 2px solid #ffffff;
@@ -64,18 +65,27 @@ input[type="text"] {
     border-radius: 50px;
 }
 
-
 /*
 -------------------Código do Conteúdo Principal-------------------
 */
-main {
-    background-color: #00344A;
+
+.background {
+    position: fixed;
+    z-index: -2;
+}
+
+.filtro {
+    background-color: #001016;
+    position: fixed;
+    z-index: -1;
+    opacity: 95%;
+    height: 100%;
+    width: 100%;
 }
 
 .content {
     width: 100%;
     height: 400px;
-    background-color: #00344A;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -89,7 +99,7 @@ main {
     margin: 30px;
     cursor: pointer;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
-    
+
 }
 
 .secoes-content {
@@ -101,12 +111,6 @@ h2 {
     margin-top: 30px;
 }
 
-.margem20px {
-    height: 20px;
-    width: auto;
-    background-color: #00344A;
-
-}
 
 .painel-detalhes {
     background-color: #001924;
@@ -127,7 +131,7 @@ h2 {
     width: 100%;
     height: 600px;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     position: fixed;
     z-index: 5;
@@ -152,7 +156,7 @@ h2 {
     color: #ffffff;
 }
 
-.x1{
+.x1 {
     height: 500px;
 }
 
@@ -179,10 +183,10 @@ h2 {
     top: 0%;
 }
 
-#resultados {   
+#resultados {
     min-height: 800px;
     width: 100%;
-    background-color: #00344A;
+    background-color: 001016;
 }
 
 .tamanhoposter {
@@ -195,6 +199,15 @@ h2 {
     width: 240px;
     height: 320px;
     border-radius: 7%;
+}
+
+.horizontal {
+
+    border: none;
+    border-top: 1px solid #ccc;
+    border-color: #00344A;
+    border-width: 5px;
+    top: 0%;
 }
 
 /*

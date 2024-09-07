@@ -49,13 +49,33 @@ for (let i = 0; i < 100; i++) {
 
 //adiciona os banners dos filmes/séries Novos
 let section = document.getElementById("content");
-section.innerHTML = `
-    <button onclick="abrirpainel(this)" class="banner"> <span class="hind">${dados[cont[0]].titulo}</span> <img src= "${dados[cont[0]].poster}" class="tamanhoposter1"> </button>
-    <button onclick="abrirpainel(this)" class="banner"> <span class="hind">${dados[cont[1]].titulo}</span> <img src= "${dados[cont[1]].poster}" class="tamanhoposter1"></button>
-    <button onclick="abrirpainel(this)" class="banner"> <span class="hind">${dados[cont[2]].titulo}</span> <img src= "${dados[cont[2]].poster}" class="tamanhoposter1"></button>
-    <button onclick="abrirpainel(this)" class="banner"> <span class="hind">${dados[cont[3]].titulo}</span> <img src= "${dados[cont[3]].poster}" class="tamanhoposter1"></button>
-    <button onclick="abrirpainel(this)" class="banner"> <span class="hind">${dados[cont[4]].titulo}</span> <img src= "${dados[cont[4]].poster}" class="tamanhoposter1"></button>
-    `
+section.innerHTML = ''; // Limpa a seção antes de adicionar novos elementos
+
+// Itera pelos índices dos filmes (de 0 a 4)
+for (let i = 0; i < 5; i++) {
+    // Cria o botão
+    let button = document.createElement("button");
+    button.classList.add("banner");
+    button.setAttribute("onclick", "abrirpainel(this)");
+
+    // Cria o título
+    let title = document.createElement("span");
+    title.classList.add("hind");
+    title.textContent = dados[cont[i]].titulo;
+
+    // Cria a imagem
+    let img = document.createElement("img");
+    img.src = dados[cont[i]].poster;
+    img.classList.add("tamanhoposter1");
+
+    // Adiciona o título e a imagem ao botão
+    button.appendChild(title);
+    button.appendChild(img);
+
+    // Adiciona o botão à seção
+    section.appendChild(button);
+}
+
 let section2 = document.getElementById("todos");
 
 // Cria 20 conteiners de 5 elementos cada, para que todos os filmes/séries do catálogo sejam apresentados em linhas de 5 elementos
@@ -100,9 +120,15 @@ for (let i = 0; i < dados.length; i += 5) {
 }
 
 function pesquisar() {
-    let campoPesquisa = document.getElementById("campo-pesquisa").value;
+    let campoPesquisa = document.getElementById("campo-pesquisa").value.trim().toLowerCase(); // Remove espaços e converte para minúsculas
     console.log(campoPesquisa);
 
+    // Verifica se o campo de pesquisa está vazio no início
+    if (campoPesquisa === "") {
+        return;
+    }
+
+    // Esconder a seção original e mostrar os resultados
     document.getElementById("esconder").classList.add("hind");
     document.getElementById("resultados").classList.remove("hind");
 
@@ -110,16 +136,30 @@ function pesquisar() {
     section3.innerHTML = ""; // Limpa resultados anteriores
 
     for (let dado of dados) {
-        if (dado.titulo.includes(campoPesquisa)) {
-            section3.innerHTML += `
-          <button onclick="abrirpainel(this)" class="banner">${dado.titulo}</button>
-        `;
-        }
-        if (campoPesquisa == "") {
-            return;
+        // Verifica se o título contém o texto da pesquisa (case insensitive)
+        if (dado.titulo.toLowerCase().includes(campoPesquisa)) {
+            let button = document.createElement("button");
+            button.classList.add("banner");
+            button.setAttribute("onclick", "abrirpainel(this)");
+
+            let title = document.createElement("span");
+            title.classList.add("hind");
+            title.textContent = dado.titulo;
+
+            let img = document.createElement("img");
+            img.src = dado.poster;
+            img.classList.add("tamanhoposter1");
+
+            // Adiciona o título e a imagem ao botão
+            button.appendChild(title);
+            button.appendChild(img);
+
+            // Adiciona o botão à seção de resultados
+            section3.appendChild(button);
         }
     }
 }
+
 
 function abrirpainel(botao) {
     document.getElementById("painel").classList.remove("hind");
@@ -129,7 +169,6 @@ function abrirpainel(botao) {
 
     let detalhefilme = document.getElementById("detalhes");
     let imagemfilme = document.getElementById("imagem");
-    let dataapresentada = [10];
     for (let dado of dados) {
         if (dado.titulo==nomeDoBotao) {
 
@@ -146,7 +185,7 @@ function abrirpainel(botao) {
             detalhefilme.innerHTML = `
             <h1 style="margin-bottom: 70px">${dado.titulo}</h1>
             <p style="margin: 10px; font-size: 20px;" >${dado.descricao}</p>
-            <p style="margin: 10px; font-size: 20px;" >Disponível no Streaming: ${dataFormatada}</p>
+            <p style="margin: 10px; font-size: 20px;" >Data de lançamento: ${dataFormatada}</p>
             <p style="margin: 10px; font-size: 20px;" >Plataforma disponível:</p>
             <div class="plataformas">
                 <li style="font-size: 20px;" >${dado.plataformas_disponiveis}</li>
