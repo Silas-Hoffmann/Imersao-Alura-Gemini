@@ -50,11 +50,11 @@ for (let i = 0; i < 100; i++) {
 //adiciona os banners dos filmes/séries Novos
 let section = document.getElementById("content");
 section.innerHTML = `
-    <button onclick="abrirpainel(this)" class="banner">${dados[cont[0]].titulo}</button>
-    <button onclick="abrirpainel(this)" class="banner">${dados[cont[1]].titulo}</button>
-    <button onclick="abrirpainel(this)" class="banner">${dados[cont[2]].titulo}</button>
-    <button onclick="abrirpainel(this)" class="banner">${dados[cont[3]].titulo}</button>
-    <button onclick="abrirpainel(this)" class="banner">${dados[cont[4]].titulo}</button>
+    <button onclick="abrirpainel(this)" class="banner"> <span class="hind">${dados[cont[0]].titulo}</span> <img src= "${dados[cont[0]].poster}" class="tamanhoposter1"> </button>
+    <button onclick="abrirpainel(this)" class="banner"> <span class="hind">${dados[cont[1]].titulo}</span> <img src= "${dados[cont[1]].poster}" class="tamanhoposter1"></button>
+    <button onclick="abrirpainel(this)" class="banner"> <span class="hind">${dados[cont[2]].titulo}</span> <img src= "${dados[cont[2]].poster}" class="tamanhoposter1"></button>
+    <button onclick="abrirpainel(this)" class="banner"> <span class="hind">${dados[cont[3]].titulo}</span> <img src= "${dados[cont[3]].poster}" class="tamanhoposter1"></button>
+    <button onclick="abrirpainel(this)" class="banner"> <span class="hind">${dados[cont[4]].titulo}</span> <img src= "${dados[cont[4]].poster}" class="tamanhoposter1"></button>
     `
 let section2 = document.getElementById("todos");
 
@@ -67,7 +67,20 @@ function criarContainer(inicio, fim) {
     for (let i = inicio; i < fim; i++) {
         let banner = document.createElement("button");
         banner.classList.add("banner");
-        banner.textContent = dados[i].titulo;
+
+        // Cria o elemento <img> para o poster
+        let poster = document.createElement("img");
+        poster.src = dados[i].poster; // Atribui o caminho da imagem
+        poster.classList.add("tamanhoposter1");
+
+        // Cria um elemento <span> para o título e adiciona a classe "hind"
+        let titulo = document.createElement("span");
+        titulo.textContent = dados[i].titulo;
+        titulo.classList.add("hind"); // Adiciona a classe "hind"
+
+        // Adiciona o título e a imagem ao botão
+        banner.appendChild(titulo); // Insere o título dentro do botão
+        banner.appendChild(poster); // Insere a imagem dentro do botão
 
         // Adiciona o evento de clique
         banner.addEventListener("click", function () {
@@ -79,6 +92,7 @@ function criarContainer(inicio, fim) {
 
     section2.appendChild(container);
 }
+
 
 // Cria os 20 containers
 for (let i = 0; i < dados.length; i += 5) {
@@ -114,6 +128,7 @@ function abrirpainel(botao) {
     const nomeDoBotao = botao.textContent;
 
     let detalhefilme = document.getElementById("detalhes");
+    let imagemfilme = document.getElementById("imagem");
     let dataapresentada = [10];
     for (let dado of dados) {
         if (dado.titulo==nomeDoBotao) {
@@ -125,6 +140,9 @@ function abrirpainel(botao) {
                 year: 'numeric'
             });
 
+            imagemfilme.innerHTML = `
+                <img src="${dado.poster}" class="tamanhoposter">
+            `
             detalhefilme.innerHTML = `
             <h1 style="margin-bottom: 70px">${dado.titulo}</h1>
             <p style="margin: 10px; font-size: 20px;" >${dado.descricao}</p>
