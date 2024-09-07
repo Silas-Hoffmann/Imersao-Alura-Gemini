@@ -13,7 +13,7 @@ let dados = [
     },
     {
       "titulo": "Classified",
-      "descricao": "Série sobre uma jovem que se muda para a África do Sul e descobre segredos envolvendo sua família.",
+      "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur natus nulla expedita odio, reprehenderit harum suscipit quisquam. Nesciunt nulla, laboriosam provident doloremque consequuntur at neque temporibus unde asperiores placeat tenetur.",
       "data_de_lancamento": "2024/08/22",
       "plataformas_disponiveis": ["Prime Video"]
     },

@@ -11,10 +11,10 @@
 </head>
 
 <body>
-    <div class="opaco hind"></div>
+    <div class="opaco hind" id="opaco"></div>
     <header><!--cabeçalho-->
         <div class="cabeçalho">
-            <img src="assets/images/logo.png" alt="Logo" class="logo". id="minhaLogo">
+            <img src="assets/images/logo.png" alt="Logo" class="logo" . id="minhaLogo">
             <h1>Cinetrack</h1>
         </div>
         <img src="assets/images/logo-completa.png" alt="logo-completa" class="logo-completa">
@@ -42,21 +42,14 @@
             <hr class="horizontal">
             <h2 class="secoes-content">Todos</h2>
             <div id="todos"></div>
-            <div class="painel hind">
-                <div class="painel-detalhes">
-                    <div class="imagem"></div>
-    
-                    <div class="detalhes"><!--Informações do filme selecionado-->
-                        <h1><!--Título--></h1>
-                        <p><!--Descrição--></p>
-                        <p>Lançamento: <!--Data--></p>
-                        <p>Plataformas disponíveis:</p>
-                        <div class="plataformas">
-                            <li><!--Plataforma--></li>
-                        </div>
-                    </div>
+        </div>
+        <div class="painel hind" id="painel">
+            <div class="painel-detalhes">
+                <div class="imagem"></div>
+                <div class="organizacao">
+                    <div class="detalhes" id="detalhes"><!--Informações do filme selecionado--></div>
                     <div class="x1">
-                        <button class="x">
+                        <button onclick="fecharpainel()" class="x" id="x">
                             <i class="fa-solid fa-x"></i>
                         </button>
                     </div>
@@ -88,7 +81,7 @@
             <hr class="vertical">
             <div class="Sobre">
                 <h3>Sobre</h3>
-                <p class="li">Aluno de Ciência da Computação PUC-MG <br>Belo Horizonte - Minas Gerais / Brasil</p>
+                <p class="li">Aluno de Ciência da Computação 2° Semestre PUC-MG <br>Belo Horizonte - Minas Gerais / Brasil</p>
             </div>
 
         </div>

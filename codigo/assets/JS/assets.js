@@ -1,7 +1,7 @@
 const logo = document.getElementById('minhaLogo');
 
 logo.addEventListener('click', () => {
-  location.reload();
+    location.reload();
 });
 
 let data1 = "00/00/00", data2 = "00/00/00", data3 = "00/00/00", data4 = "00/00/00", data5 = "00/00/00", cont = [5];
@@ -50,11 +50,11 @@ for (let i = 0; i < 100; i++) {
 //adiciona os banners dos filmes/séries Novos
 let section = document.getElementById("content");
 section.innerHTML = `
-    <button class="banner">${dados[cont[0]].titulo}</button>
-    <button class="banner">${dados[cont[1]].titulo}</button>
-    <button class="banner">${dados[cont[2]].titulo}</button>
-    <button class="banner">${dados[cont[3]].titulo}</button>
-    <button class="banner">${dados[cont[4]].titulo}</button>
+    <button onclick="abrirpainel(this)" class="banner">${dados[cont[0]].titulo}</button>
+    <button onclick="abrirpainel(this)" class="banner">${dados[cont[1]].titulo}</button>
+    <button onclick="abrirpainel(this)" class="banner">${dados[cont[2]].titulo}</button>
+    <button onclick="abrirpainel(this)" class="banner">${dados[cont[3]].titulo}</button>
+    <button onclick="abrirpainel(this)" class="banner">${dados[cont[4]].titulo}</button>
     `
 let section2 = document.getElementById("todos");
 
@@ -62,17 +62,24 @@ let section2 = document.getElementById("todos");
 function criarContainer(inicio, fim) {
     let container = document.createElement("div");
     container.classList.add("content");
-    container.classList.add("todos"); // Evite duplicar IDs
+    container.classList.add("todos");
 
     for (let i = inicio; i < fim; i++) {
         let banner = document.createElement("button");
         banner.classList.add("banner");
         banner.textContent = dados[i].titulo;
+
+        // Adiciona o evento de clique
+        banner.addEventListener("click", function() {
+            abrirpainel(this);
+        });
+
         container.appendChild(banner);
     }
 
     section2.appendChild(container);
 }
+
 
 // Cria os 20 containers
 for (let i = 0; i < dados.length; i += 5) {
@@ -80,25 +87,57 @@ for (let i = 0; i < dados.length; i += 5) {
 }
 
 
-
-
 function pesquisar() {
-
-    let campoPesquisa = document.getElementById("campo-pesquisa").value
-    console.log (campoPesquisa)
+    let campoPesquisa = document.getElementById("campo-pesquisa").value;
+    console.log(campoPesquisa);
 
     document.getElementById("esconder").classList.add("hind");
     document.getElementById("resultados").classList.remove("hind");
 
     let section3 = document.getElementById("resultados");
+    section3.innerHTML = ""; // Limpa resultados anteriores
+
     for (let dado of dados) {
-        if (dados.titulo.includes(campoPesquisa)){
+        if (dado.titulo.includes(campoPesquisa)) {
             section3.innerHTML += `
-        <button class="banner">${dados[0].titulo}</button>
-    `
+          <button onclick="abrirpainel(this)" class="banner">${dado.titulo}</button>
+        `;
         }
     }
-    
+}
 
-    
+
+
+function abrirpainel(botao) {
+    document.getElementById("painel").classList.remove("hind");
+    document.getElementById("opaco").classList.remove("hind");
+
+    const nomeDoBotao = botao.textContent;
+
+    let detalhefilme = document.getElementById("detalhes");
+
+    for (let dado of dados) {
+        if (dado.titulo.includes(nomeDoBotao)) {
+
+            detalhefilme.innerHTML = `
+            <h1>${dado.titulo}</h1>
+                <p>${dado.descricao}</p>
+                <p>Lançamento: ${dado.data_de_lancamento}</p>
+                <p>Plataformas disponíveis:</p>
+                <div class="plataformas">
+                    <li>${dado.plataformas_disponiveis}</li>
+                </div>
+            `
+        }
+    }
+
+
+
+
+
+
+}
+function fecharpainel() {
+    document.getElementById("painel").classList.add("hind");
+    document.getElementById("opaco").classList.add("hind");
 }
